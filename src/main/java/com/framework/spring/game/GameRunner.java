@@ -6,8 +6,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class GameRunner {
 
-    @Autowired
     private GamingConsole game;
+
+    @Autowired
     public GameRunner(GamingConsole game) {
         this.game = game;
     }
